@@ -5,20 +5,20 @@
 class Doggl < Formula
   desc "Software to create fast and easy drum rolls."
   homepage ""
-  version "1.2.2"
+  version "1.2.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tubenhirn/doggl/releases/download/v1.2.2/doggl_1.2.2_Darwin_arm64.tar.gz"
-      sha256 "4c74fcd5687cef62efd23653c9a87a4b01c5895a60e3ac5cfdbca5e1cc6219f8"
+      url "https://github.com/tubenhirn/doggl/releases/download/v1.2.3/doggl_1.2.3_Darwin_arm64.tar.gz"
+      sha256 "c7f531483943f1fc99ca0056d5cfa3a3e5f12cb0982d8b28e4f8cf3a3cb9c581"
 
       def install
         bin.install "darwin_arm64/doggl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/doggl/releases/download/v1.2.2/doggl_1.2.2_Darwin_x86_64.tar.gz"
-      sha256 "7f4e883339131ec1df060facae04272cde0d548966a1518fcebc1eb9a9ffae90"
+      url "https://github.com/tubenhirn/doggl/releases/download/v1.2.3/doggl_1.2.3_Darwin_x86_64.tar.gz"
+      sha256 "bdae158a74446d00d4a72e638120d24918a073e3616af818fa9f37a75e38905d"
 
       def install
         bin.install "darwin_amd64_v1/doggl"
@@ -28,8 +28,8 @@ class Doggl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/doggl/releases/download/v1.2.2/doggl_1.2.2_Linux_x86_64.tar.gz"
-      sha256 "216ddc8f1d0a60b2dccbdcac8c26c9b662f400a1564845a4899f935b533e708e"
+      url "https://github.com/tubenhirn/doggl/releases/download/v1.2.3/doggl_1.2.3_Linux_x86_64.tar.gz"
+      sha256 "fd0b4bb88f2b005537b6830b24e14c515e39446ed4ecab04c494d371afa7dc67"
 
       def install
         bin.install "linux_amd64_v1/doggl"
