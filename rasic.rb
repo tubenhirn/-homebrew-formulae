@@ -5,26 +5,26 @@
 class Rasic < Formula
   desc "Wrapper for trivy scanner with incident creation."
   homepage ""
-  version "1.17.2"
+  version "1.17.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.2/rasic_1.17.2_Darwin_arm64.tar.gz"
-      sha256 "780703fee3437c4d8bbc94e3fe385e1a013b0f7728a5d659029ac02348680279"
+      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.3/rasic_1.17.3_Darwin_arm64.tar.gz"
+      sha256 "7d6dd51eada7ffd6ed7eb1bd4b5462005a634257b0de30487a4fa683f1fc43bd"
 
       def install
-        bin.install "darwin_arm64/plugins/reporter/gitlab"
-        bin.install "darwin_arm64/plugins/source/gitlab"
+        bin.install "darwin_arm64/plugins/reporter/reporter_gitlab"
+        bin.install "darwin_arm64/plugins/source/source_gitlab"
         bin.install "darwin_arm64/rasic"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.2/rasic_1.17.2_Darwin_x86_64.tar.gz"
-      sha256 "47ee67fd990be45b2f363c55419d5734e438844a4aeb18d8d1ebb7bf0135225e"
+      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.3/rasic_1.17.3_Darwin_x86_64.tar.gz"
+      sha256 "15f37dcf86daea29a8f69eb5968fcb4c76814511e48c30d676042cfaf8f853a0"
 
       def install
-        bin.install "darwin_amd64_v1/plugins/reporter/gitlab"
-        bin.install "darwin_amd64_v1/plugins/source/gitlab"
+        bin.install "darwin_amd64_v1/plugins/reporter/reporter_gitlab"
+        bin.install "darwin_amd64_v1/plugins/source/source_gitlab"
         bin.install "darwin_amd64_v1/rasic"
       end
     end
@@ -32,12 +32,12 @@ class Rasic < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.2/rasic_1.17.2_Linux_x86_64.tar.gz"
-      sha256 "50ab3a7b07499f5ca511680188ad9d2a1b2448831d95e3467939f1ed3dde2f3b"
+      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.3/rasic_1.17.3_Linux_x86_64.tar.gz"
+      sha256 "2e285746d6c2aab4fcf889330b4af5c8950bd504ff4d471fbc737f61d0cdd79e"
 
       def install
-        bin.install "linux_amd64_v1/plugins/reporter/gitlab"
-        bin.install "linux_amd64_v1/plugins/source/gitlab"
+        bin.install "linux_amd64_v1/plugins/reporter/reporter_gitlab"
+        bin.install "linux_amd64_v1/plugins/source/source_gitlab"
         bin.install "linux_amd64_v1/rasic"
       end
     end
