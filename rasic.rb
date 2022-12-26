@@ -5,12 +5,12 @@
 class Rasic < Formula
   desc "Wrapper for trivy scanner with incident creation."
   homepage ""
-  version "1.17.3"
+  version "1.18.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.3/rasic_1.17.3_Darwin_arm64.tar.gz"
-      sha256 "7d6dd51eada7ffd6ed7eb1bd4b5462005a634257b0de30487a4fa683f1fc43bd"
+      url "https://github.com/tubenhirn/rasic/releases/download/v1.18.0/rasic_1.18.0_Darwin_arm64.tar.gz"
+      sha256 "835ebb5ace179332d013c6437a410f4c2da7326bca914993063fec7bbd1ae88f"
 
       def install
         bin.install "darwin_arm64/plugins/reporter/reporter_gitlab"
@@ -19,8 +19,8 @@ class Rasic < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.3/rasic_1.17.3_Darwin_x86_64.tar.gz"
-      sha256 "15f37dcf86daea29a8f69eb5968fcb4c76814511e48c30d676042cfaf8f853a0"
+      url "https://github.com/tubenhirn/rasic/releases/download/v1.18.0/rasic_1.18.0_Darwin_x86_64.tar.gz"
+      sha256 "77b1c17430d3852ed8ab415248078b34d09b390910fbe12e32e173fae60df3d7"
 
       def install
         bin.install "darwin_amd64_v1/plugins/reporter/reporter_gitlab"
@@ -32,8 +32,8 @@ class Rasic < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/rasic/releases/download/v1.17.3/rasic_1.17.3_Linux_x86_64.tar.gz"
-      sha256 "2e285746d6c2aab4fcf889330b4af5c8950bd504ff4d471fbc737f61d0cdd79e"
+      url "https://github.com/tubenhirn/rasic/releases/download/v1.18.0/rasic_1.18.0_Linux_x86_64.tar.gz"
+      sha256 "a8142c05664f07d51d5d6d03f1c90a6dd8f302c9e7afd96796a215f5f809624a"
 
       def install
         bin.install "linux_amd64_v1/plugins/reporter/reporter_gitlab"
