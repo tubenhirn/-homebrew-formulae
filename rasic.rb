@@ -10,7 +10,7 @@ class Rasic < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tubenhirn/rasic/releases/download/v1.19.2/rasic_1.19.2_Darwin_arm64.tar.gz"
-      sha256 "1b8c19ac5a6185d1a5fdf580969479bc9f706d477a41b5e55c5d119d475e96c6"
+      sha256 "d26e9cc7d1c2b6d85c52a9fb215cab6555e1179a38a92702d06f005cc20a3582"
 
       def install
         bin.install "darwin_arm64/plugins/reporter/reporter_gitlab"
@@ -20,7 +20,7 @@ class Rasic < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/tubenhirn/rasic/releases/download/v1.19.2/rasic_1.19.2_Darwin_x86_64.tar.gz"
-      sha256 "ae9821002a854f35a992d5fc77fb3d7702a9e02ed1524d17badc63b64d3ffa46"
+      sha256 "d928ab972cbf1096c5e3bb0bdf12e714b752d234c08d29c79bcad09aa01ed614"
 
       def install
         bin.install "darwin_amd64_v1/plugins/reporter/reporter_gitlab"
@@ -33,7 +33,7 @@ class Rasic < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/tubenhirn/rasic/releases/download/v1.19.2/rasic_1.19.2_Linux_x86_64.tar.gz"
-      sha256 "75bddc497592ef06fea87e2b26e9a1e7b051d362f5967cbc307a3d58648dfad7"
+      sha256 "a35215b3758a463d53252579b56584ac3462943f2c0ad9a6c4e4c1b6ec435bbe"
 
       def install
         bin.install "linux_amd64_v1/plugins/reporter/reporter_gitlab"
