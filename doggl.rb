@@ -5,20 +5,20 @@
 class Doggl < Formula
   desc "Simple toggl client for work time tracking."
   homepage ""
-  version "1.6.12"
+  version "1.6.13"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tubenhirn/doggl/releases/download/v1.6.12/doggl_1.6.12_darwin_arm64.tar.gz"
-      sha256 "9e5cac8d91f9f30a06e7d4b0272433b6d4eee2330d7aafe716c71f5c9fac5d95"
+      url "https://github.com/tubenhirn/doggl/releases/download/v1.6.13/doggl_1.6.13_darwin_arm64.tar.gz"
+      sha256 "722b72dd5d052e1ee14079a2700ebdbcdc966375cd80b8f8d62d12deed5c4d08"
 
       def install
         bin.install "darwin_arm64/doggl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/doggl/releases/download/v1.6.12/doggl_1.6.12_darwin_amd64.tar.gz"
-      sha256 "05cb739790f7f01bce7a3e6372b25762c7a23774ab0ff9e340881db35e8b4f96"
+      url "https://github.com/tubenhirn/doggl/releases/download/v1.6.13/doggl_1.6.13_darwin_amd64.tar.gz"
+      sha256 "9eca2a38557659b86bb9c0df254b5670dce2a1c7cf7e0fe9a4867cb85fdd173d"
 
       def install
         bin.install "darwin_amd64_v1/doggl"
@@ -28,8 +28,8 @@ class Doggl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tubenhirn/doggl/releases/download/v1.6.12/doggl_1.6.12_linux_amd64.tar.gz"
-      sha256 "6e888ae9d725690bece106aa5d63b4b5b9b23e618991f070aedf968b0a5d8f96"
+      url "https://github.com/tubenhirn/doggl/releases/download/v1.6.13/doggl_1.6.13_linux_amd64.tar.gz"
+      sha256 "0acea5c1103963f96a8cdf971b5969364c606fcd21c74390e4c3602653c0b3ec"
 
       def install
         bin.install "linux_amd64_v1/doggl"
